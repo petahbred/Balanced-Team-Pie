@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE9543C71A319E3200AE2FE1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9543C61A319E3200AE2FE1 /* main.m */; };
+		AE9543CA1A319E3200AE2FE1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9543C91A319E3200AE2FE1 /* AppDelegate.m */; };
+		AE9543CD1A319E3200AE2FE1 /* BTPie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE9543CB1A319E3200AE2FE1 /* BTPie.xcdatamodeld */; };
+		AE9543D01A319E3200AE2FE1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9543CF1A319E3200AE2FE1 /* ViewController.m */; };
+		AE9543D31A319E3200AE2FE1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE9543D11A319E3200AE2FE1 /* Main.storyboard */; };
+		AE9543D51A319E3200AE2FE1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE9543D41A319E3200AE2FE1 /* Images.xcassets */; };
+		AE9543D81A319E3200AE2FE1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE9543D61A319E3200AE2FE1 /* LaunchScreen.xib */; };
+		AE9543E41A319E3200AE2FE1 /* BTPieTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9543E31A319E3200AE2FE1 /* BTPieTests.m */; };
+		AEBEAFFF1A3422A000609061 /* ManagerSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBEAFFE1A3422A000609061 /* ManagerSettingsViewController.m */; };
+		AEBEB0081A355DE400609061 /* PieSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEBEB0071A355DE400609061 /* PieSettingsViewController.m */; };
+		AEDDB7F31A3680CB004678BA /* ManagerPieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEDDB7F21A3680CB004678BA /* ManagerPieViewController.m */; };
+		AEFE8B971A31A09500751BA6 /* ServiceConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE8B961A31A09500751BA6 /* ServiceConnector.m */; };
+		AEFE8B9E1A32ADC500751BA6 /* NewPersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE8B9D1A32ADC500751BA6 /* NewPersonViewController.m */; };
+		AEFE8BA11A32CA2300751BA6 /* ProjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE8BA01A32CA2300751BA6 /* ProjectTableViewController.m */; };
+		AEFE8BA41A32E62A00751BA6 /* UserSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFE8BA31A32E62A00751BA6 /* UserSettingsViewController.m */; };
+		D87100CF1A377DF100F6375D /* PSRPieView.m in Sources */ = {isa = PBXBuildFile; fileRef = D87100CC1A377DF100F6375D /* PSRPieView.m */; };
+		D87100D01A377DF100F6375D /* PSRSlice.m in Sources */ = {isa = PBXBuildFile; fileRef = D87100CE1A377DF100F6375D /* PSRSlice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AE9543DE1A319E3200AE2FE1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE9543B91A319E3200AE2FE1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE9543C01A319E3200AE2FE1;
+			remoteInfo = BTPie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AE9543C11A319E3200AE2FE1 /* BTPie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTPie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9543C51A319E3200AE2FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9543C61A319E3200AE2FE1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AE9543C81A319E3200AE2FE1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AE9543C91A319E3200AE2FE1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AE9543CC1A319E3200AE2FE1 /* BTPie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BTPie.xcdatamodel; sourceTree = "<group>"; };
+		AE9543CE1A319E3200AE2FE1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AE9543CF1A319E3200AE2FE1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AE9543D21A319E3200AE2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE9543D41A319E3200AE2FE1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AE9543D71A319E3200AE2FE1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AE9543DD1A319E3200AE2FE1 /* BTPieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BTPieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE9543E21A319E3200AE2FE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE9543E31A319E3200AE2FE1 /* BTPieTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTPieTests.m; sourceTree = "<group>"; };
+		AEBEAFFD1A3422A000609061 /* ManagerSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerSettingsViewController.h; sourceTree = "<group>"; };
+		AEBEAFFE1A3422A000609061 /* ManagerSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerSettingsViewController.m; sourceTree = "<group>"; };
+		AEBEB0061A355DE400609061 /* PieSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PieSettingsViewController.h; sourceTree = "<group>"; };
+		AEBEB0071A355DE400609061 /* PieSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PieSettingsViewController.m; sourceTree = "<group>"; };
+		AEDDB7F11A3680CB004678BA /* ManagerPieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManagerPieViewController.h; sourceTree = "<group>"; };
+		AEDDB7F21A3680CB004678BA /* ManagerPieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManagerPieViewController.m; sourceTree = "<group>"; };
+		AEFE8B951A31A08600751BA6 /* ServiceConnector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServiceConnector.h; sourceTree = "<group>"; };
+		AEFE8B961A31A09500751BA6 /* ServiceConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceConnector.m; sourceTree = "<group>"; };
+		AEFE8B9C1A32ADC500751BA6 /* NewPersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPersonViewController.h; sourceTree = "<group>"; };
+		AEFE8B9D1A32ADC500751BA6 /* NewPersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPersonViewController.m; sourceTree = "<group>"; };
+		AEFE8B9F1A32CA2300751BA6 /* ProjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectTableViewController.h; sourceTree = "<group>"; };
+		AEFE8BA01A32CA2300751BA6 /* ProjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectTableViewController.m; sourceTree = "<group>"; };
+		AEFE8BA21A32E62A00751BA6 /* UserSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserSettingsViewController.h; sourceTree = "<group>"; };
+		AEFE8BA31A32E62A00751BA6 /* UserSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserSettingsViewController.m; sourceTree = "<group>"; };
+		D87100CB1A377DF100F6375D /* PSRPieView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRPieView.h; sourceTree = "<group>"; };
+		D87100CC1A377DF100F6375D /* PSRPieView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRPieView.m; sourceTree = "<group>"; };
+		D87100CD1A377DF100F6375D /* PSRSlice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSRSlice.h; sourceTree = "<group>"; };
+		D87100CE1A377DF100F6375D /* PSRSlice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSRSlice.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE9543BE1A319E3200AE2FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9543DA1A319E3200AE2FE1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AE9543B81A319E3200AE2FE1 = {
+			isa = PBXGroup;
+			children = (
+				AE9543C31A319E3200AE2FE1 /* BTPie */,
+				AE9543E01A319E3200AE2FE1 /* BTPieTests */,
+				AE9543C21A319E3200AE2FE1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AE9543C21A319E3200AE2FE1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE9543C11A319E3200AE2FE1 /* BTPie.app */,
+				AE9543DD1A319E3200AE2FE1 /* BTPieTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE9543C31A319E3200AE2FE1 /* BTPie */ = {
+			isa = PBXGroup;
+			children = (
+				AE9543C81A319E3200AE2FE1 /* AppDelegate.h */,
+				AE9543C91A319E3200AE2FE1 /* AppDelegate.m */,
+				AE9543CE1A319E3200AE2FE1 /* ViewController.h */,
+				AE9543CF1A319E3200AE2FE1 /* ViewController.m */,
+				AEFE8B9C1A32ADC500751BA6 /* NewPersonViewController.h */,
+				AEFE8B9D1A32ADC500751BA6 /* NewPersonViewController.m */,
+				AE9543D11A319E3200AE2FE1 /* Main.storyboard */,
+				AE9543D41A319E3200AE2FE1 /* Images.xcassets */,
+				AE9543D61A319E3200AE2FE1 /* LaunchScreen.xib */,
+				AE9543CB1A319E3200AE2FE1 /* BTPie.xcdatamodeld */,
+				AE9543C41A319E3200AE2FE1 /* Supporting Files */,
+				AEFE8B951A31A08600751BA6 /* ServiceConnector.h */,
+				AEFE8B961A31A09500751BA6 /* ServiceConnector.m */,
+				AEFE8B9F1A32CA2300751BA6 /* ProjectTableViewController.h */,
+				AEFE8BA01A32CA2300751BA6 /* ProjectTableViewController.m */,
+				AEFE8BA21A32E62A00751BA6 /* UserSettingsViewController.h */,
+				AEFE8BA31A32E62A00751BA6 /* UserSettingsViewController.m */,
+				AEBEAFFD1A3422A000609061 /* ManagerSettingsViewController.h */,
+				AEBEAFFE1A3422A000609061 /* ManagerSettingsViewController.m */,
+				AEBEB0061A355DE400609061 /* PieSettingsViewController.h */,
+				AEBEB0071A355DE400609061 /* PieSettingsViewController.m */,
+				AEDDB7F11A3680CB004678BA /* ManagerPieViewController.h */,
+				AEDDB7F21A3680CB004678BA /* ManagerPieViewController.m */,
+				D87100CB1A377DF100F6375D /* PSRPieView.h */,
+				D87100CC1A377DF100F6375D /* PSRPieView.m */,
+				D87100CD1A377DF100F6375D /* PSRSlice.h */,
+				D87100CE1A377DF100F6375D /* PSRSlice.m */,
+			);
+			path = BTPie;
+			sourceTree = "<group>";
+		};
+		AE9543C41A319E3200AE2FE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9543C51A319E3200AE2FE1 /* Info.plist */,
+				AE9543C61A319E3200AE2FE1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AE9543E01A319E3200AE2FE1 /* BTPieTests */ = {
+			isa = PBXGroup;
+			children = (
+				AE9543E31A319E3200AE2FE1 /* BTPieTests.m */,
+				AE9543E11A319E3200AE2FE1 /* Supporting Files */,
+			);
+			path = BTPieTests;
+			sourceTree = "<group>";
+		};
+		AE9543E11A319E3200AE2FE1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE9543E21A319E3200AE2FE1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE9543C01A319E3200AE2FE1 /* BTPie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9543E71A319E3200AE2FE1 /* Build configuration list for PBXNativeTarget "BTPie" */;
+			buildPhases = (
+				AE9543BD1A319E3200AE2FE1 /* Sources */,
+				AE9543BE1A319E3200AE2FE1 /* Frameworks */,
+				AE9543BF1A319E3200AE2FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTPie;
+			productName = BTPie;
+			productReference = AE9543C11A319E3200AE2FE1 /* BTPie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AE9543DC1A319E3200AE2FE1 /* BTPieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE9543EA1A319E3200AE2FE1 /* Build configuration list for PBXNativeTarget "BTPieTests" */;
+			buildPhases = (
+				AE9543D91A319E3200AE2FE1 /* Sources */,
+				AE9543DA1A319E3200AE2FE1 /* Frameworks */,
+				AE9543DB1A319E3200AE2FE1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AE9543DF1A319E3200AE2FE1 /* PBXTargetDependency */,
+			);
+			name = BTPieTests;
+			productName = BTPieTests;
+			productReference = AE9543DD1A319E3200AE2FE1 /* BTPieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE9543B91A319E3200AE2FE1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Derek Tong";
+				TargetAttributes = {
+					AE9543C01A319E3200AE2FE1 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					AE9543DC1A319E3200AE2FE1 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = AE9543C01A319E3200AE2FE1;
+					};
+				};
+			};
+			buildConfigurationList = AE9543BC1A319E3200AE2FE1 /* Build configuration list for PBXProject "BTPie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE9543B81A319E3200AE2FE1;
+			productRefGroup = AE9543C21A319E3200AE2FE1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE9543C01A319E3200AE2FE1 /* BTPie */,
+				AE9543DC1A319E3200AE2FE1 /* BTPieTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE9543BF1A319E3200AE2FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9543D31A319E3200AE2FE1 /* Main.storyboard in Resources */,
+				AE9543D81A319E3200AE2FE1 /* LaunchScreen.xib in Resources */,
+				AE9543D51A319E3200AE2FE1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9543DB1A319E3200AE2FE1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE9543BD1A319E3200AE2FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFE8B9E1A32ADC500751BA6 /* NewPersonViewController.m in Sources */,
+				D87100CF1A377DF100F6375D /* PSRPieView.m in Sources */,
+				AEFE8B971A31A09500751BA6 /* ServiceConnector.m in Sources */,
+				AE9543CA1A319E3200AE2FE1 /* AppDelegate.m in Sources */,
+				AE9543C71A319E3200AE2FE1 /* main.m in Sources */,
+				D87100D01A377DF100F6375D /* PSRSlice.m in Sources */,
+				AE9543D01A319E3200AE2FE1 /* ViewController.m in Sources */,
+				AE9543CD1A319E3200AE2FE1 /* BTPie.xcdatamodeld in Sources */,
+				AEBEB0081A355DE400609061 /* PieSettingsViewController.m in Sources */,
+				AEFE8BA41A32E62A00751BA6 /* UserSettingsViewController.m in Sources */,
+				AEFE8BA11A32CA2300751BA6 /* ProjectTableViewController.m in Sources */,
+				AEBEAFFF1A3422A000609061 /* ManagerSettingsViewController.m in Sources */,
+				AEDDB7F31A3680CB004678BA /* ManagerPieViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9543D91A319E3200AE2FE1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE9543E41A319E3200AE2FE1 /* BTPieTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AE9543DF1A319E3200AE2FE1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE9543C01A319E3200AE2FE1 /* BTPie */;
+			targetProxy = AE9543DE1A319E3200AE2FE1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE9543D11A319E3200AE2FE1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9543D21A319E3200AE2FE1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE9543D61A319E3200AE2FE1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE9543D71A319E3200AE2FE1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE9543E51A319E3200AE2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AE9543E61A319E3200AE2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE9543E81A319E3200AE2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BTPie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AE9543E91A319E3200AE2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BTPie/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AE9543EB1A319E3200AE2FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BTPieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTPie.app/BTPie";
+			};
+			name = Debug;
+		};
+		AE9543EC1A319E3200AE2FE1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BTPieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BTPie.app/BTPie";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE9543BC1A319E3200AE2FE1 /* Build configuration list for PBXProject "BTPie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9543E51A319E3200AE2FE1 /* Debug */,
+				AE9543E61A319E3200AE2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9543E71A319E3200AE2FE1 /* Build configuration list for PBXNativeTarget "BTPie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9543E81A319E3200AE2FE1 /* Debug */,
+				AE9543E91A319E3200AE2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE9543EA1A319E3200AE2FE1 /* Build configuration list for PBXNativeTarget "BTPieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE9543EB1A319E3200AE2FE1 /* Debug */,
+				AE9543EC1A319E3200AE2FE1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AE9543CB1A319E3200AE2FE1 /* BTPie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AE9543CC1A319E3200AE2FE1 /* BTPie.xcdatamodel */,
+			);
+			currentVersion = AE9543CC1A319E3200AE2FE1 /* BTPie.xcdatamodel */;
+			path = BTPie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AE9543B91A319E3200AE2FE1 /* Project object */;
+}
