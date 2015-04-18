@@ -66,17 +66,29 @@
     
     if (self) {
         self.isManager = NO;
-        self.numberOfSlices = [skillList count];
+//        self.numberOfSlices = [skillList count];
+        self.numberOfSlices = 6;
         self.angleInterval = 2.0 / self.numberOfSlices;
         int i = 0;
         for (float angle = 0.; angle < 2.0; angle += self.angleInterval){
-            if (i >= [skillList count]){
+            /*
+             if (i >= [skillList count]){
+             break;
+             }*/
+            if (i >= 6){
                 break;
             }
-            NSDictionary *skillInfo = skillList[i];
+            //            NSDictionary *skillInfo = skillList[i];
             
-            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:[[skillInfo objectForKey:@"pc_value"] floatValue] * _sectionSize  color:[self randomColor]];
-//            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:i * _sectionSize  color:[self randomColor]];
+            /* Implicit Definition */
+            int randomValue = 1 + arc4random() % (5 - 1);
+            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[NSString stringWithFormat:@"Java%d", i] startAngle:angle endAngle:angle + self.angleInterval radius:randomValue * _sectionSize  color:[self randomColor]];
+            
+            //Correct line with server implementation.
+            //            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:[[skillInfo objectForKey:@"pc_value"] floatValue] * _sectionSize  color:[self randomColor]];
+            
+            
+            //            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:i * _sectionSize  color:[self randomColor]];
             [self.pieSlices addObject:slice];
             i++;
         }

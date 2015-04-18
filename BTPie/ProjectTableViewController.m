@@ -151,6 +151,7 @@
         _projectAddButton.hidden = YES;
         noProjectsLabel.hidden = YES;
         
+        /*
         if([[person objectForKey:@"team_leader_id"] isEqual:[person objectForKey:@"user_account_id"]]){
             //user is manager
             
@@ -163,19 +164,19 @@
             self.view = [[PSRPieView alloc] initForManager:CGRectZero memberList:members];
             self.view.backgroundColor = [UIColor whiteColor];
             
-        }else{
+        }else{ */
             // Member
             
             self.managerSettings.hidden = YES;
             _saveButton.hidden = NO;
-            pie = [ServiceConnector getUserPie: [person objectForKey:@"ua_username"]]; // thisline gets the user's pie. he is a member.
-            
+//            pie = [ServiceConnector getUserPie: [person objectForKey:@"ua_username"]]; // thisline gets the user's pie. he is a member.
+        
             _userPieView = [[PSRPieView alloc] initForUser:CGRectZero skillList:pie];
             //do setup because user is member
             self.view = _userPieView;
             self.view.backgroundColor = [UIColor whiteColor];
             
-        }
+        //}
         
         for (id i in _buttonList){
             [self.view addSubview:i];

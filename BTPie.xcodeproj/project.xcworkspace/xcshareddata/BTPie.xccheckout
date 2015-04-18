@@ -10,6 +10,8 @@
 	<string>BTPie</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>0042F7BE308144225E00571F39842BE7DFD47278</key>
+		<string>https://github.com/psrivongse/Balanced-Team-Pie.git</string>
 		<key>CD3A3792096005E58094329FACF1DB342428221D</key>
 		<string>https://github.com/derekkt/BTPie.git</string>
 	</dict>
@@ -17,17 +19,27 @@
 	<string>BTPie.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>CD3A3792096005E58094329FACF1DB342428221D</key>
+		<key>0042F7BE308144225E00571F39842BE7DFD47278</key>
 		<string>../..</string>
+		<key>CD3A3792096005E58094329FACF1DB342428221D</key>
+		<string>../../../BTPie</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/derekkt/BTPie.git</string>
+	<string>https://github.com/psrivongse/Balanced-Team-Pie.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>CD3A3792096005E58094329FACF1DB342428221D</string>
+	<string>0042F7BE308144225E00571F39842BE7DFD47278</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0042F7BE308144225E00571F39842BE7DFD47278</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Balanced%20Team%20Pie</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
