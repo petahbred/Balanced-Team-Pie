@@ -4,3 +4,8 @@ A balanced team pie implementation. Each member of a group will have a same set 
 
 My implementation included all the files prefixed with <strong>PSR</strong>.
 	 This consists of drawing the Pie Graph, creating touch handlers for where the skill level will be placed. Drawing the different levels on to the pie graph, and pulling from the server the member's different skill levels.
+
+Screenshots
+===========
+
+![alt text](/ss1.png "ss1")
