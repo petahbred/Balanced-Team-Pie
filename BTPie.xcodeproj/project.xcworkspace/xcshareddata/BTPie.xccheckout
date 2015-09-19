@@ -12,8 +12,6 @@
 	<dict>
 		<key>0042F7BE308144225E00571F39842BE7DFD47278</key>
 		<string>https://github.com/psrivongse/Balanced-Team-Pie.git</string>
-		<key>CD3A3792096005E58094329FACF1DB342428221D</key>
-		<string>https://github.com/derekkt/BTPie.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BTPie.xcodeproj</string>
@@ -21,8 +19,6 @@
 	<dict>
 		<key>0042F7BE308144225E00571F39842BE7DFD47278</key>
 		<string>../..</string>
-		<key>CD3A3792096005E58094329FACF1DB342428221D</key>
-		<string>../../../BTPie</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/psrivongse/Balanced-Team-Pie.git</string>
@@ -39,14 +35,6 @@
 			<string>0042F7BE308144225E00571F39842BE7DFD47278</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Balanced%20Team%20Pie</string>
-		</dict>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>CD3A3792096005E58094329FACF1DB342428221D</string>
-			<key>IDESourceControlWCCName</key>
-			<string>BTPie</string>
 		</dict>
 	</array>
 </dict>

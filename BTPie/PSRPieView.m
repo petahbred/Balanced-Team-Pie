@@ -70,25 +70,30 @@
         self.numberOfSlices = 6;
         self.angleInterval = 2.0 / self.numberOfSlices;
         int i = 0;
+        NSArray *skills = [NSArray arrayWithObjects:@"Java", @"Objective-C", @"Python", @"Javascript", @"C++", @"C", nil];
         for (float angle = 0.; angle < 2.0; angle += self.angleInterval){
+            // Server Implementation Only
             /*
              if (i >= [skillList count]){
              break;
-             }*/
+             }
+
+            // NSDictionary *skillInfo = skillList[i];
+            
+            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:[[skillInfo objectForKey:@"pc_value"] floatValue] * _sectionSize  color:[self randomColor]];
+             
+             
+             PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:i * _sectionSize  color:[self randomColor]]; */
+            
+            /* Implicit Definition */
             if (i >= 6){
                 break;
             }
-            //            NSDictionary *skillInfo = skillList[i];
             
-            /* Implicit Definition */
             int randomValue = 1 + arc4random() % (5 - 1);
-            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[NSString stringWithFormat:@"Java%d", i] startAngle:angle endAngle:angle + self.angleInterval radius:randomValue * _sectionSize  color:[self randomColor]];
-            
-            //Correct line with server implementation.
-            //            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:[[skillInfo objectForKey:@"pc_value"] floatValue] * _sectionSize  color:[self randomColor]];
+            PSRSlice *slice = [[PSRSlice alloc] initWithFields:skills[i] startAngle:angle endAngle:angle + self.angleInterval radius:randomValue * _sectionSize  color:[self randomColor]];
             
             
-            //            PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:i * _sectionSize  color:[self randomColor]];
             [self.pieSlices addObject:slice];
             i++;
         }
@@ -116,6 +121,8 @@
             int j = 0;
             for (float angle = 0.; angle < 2.0; angle += self.angleInterval) {
                 NSDictionary *skillInfo = skillList[j];
+                
+                // Server Implementation Only
 //                PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:[[skillInfo objectForKey:@"pc_value"] floatValue] * _sectionSize color:colorList[j]];
                 
                 PSRSlice *slice = [[PSRSlice alloc] initWithFields:[skillInfo objectForKey:@"pc_name"] startAngle:angle endAngle:angle + self.angleInterval radius:k * _sectionSize color:colorList[j]];
@@ -133,10 +140,10 @@
 - (void)drawRect:(CGRect)rect {
     CGPoint center = self.window.center;
     
-    // Drawing the fills.
+    // Filling the slices.
     [self fillSlice];
     
-    /*** Drawing the pie ***/
+    /*** Drawing the pie overlay. ***/
     UIBezierPath *path = [[UIBezierPath alloc] init];
     
     float startAngle = 0.0;
@@ -171,6 +178,7 @@
     return colorList;
 }
 
+// Random color generator for each of the slices.
 - (UIColor *)randomColor
 {
     /* Random Color Generator */
@@ -180,6 +188,7 @@
     UIColor *color = [UIColor colorWithRed:red green:green blue:blue alpha:0.4];
     return color;
 }
+
 
 - (NSArray *)getSkillValues{
     NSMutableArray *skillLevels = [[NSMutableArray alloc] init];
@@ -192,6 +201,7 @@
 }
 
 
+// Fills in the pie slices with each of the skill level values.
 - (void)fillSlice
 {
     CGPoint center = self.window.center;
@@ -200,7 +210,6 @@
         float currentRadius = skillLevel * _sectionSize;
         slice.skillLevel = skillLevel;
         
-//        NSLog(@"CurrentRadius:%f", currentRadius);
         UIBezierPath *path = [[UIBezierPath alloc] init];
         [path moveToPoint:center];
         [path addArcWithCenter:center radius:currentRadius startAngle:slice.startAngle * M_PI endAngle:slice.endAngle * M_PI clockwise:YES];
@@ -267,8 +276,10 @@
 
 }
 
-// Handler for touches being moved.
-/*
+/* Drag Handler
+ * *Have not implemented the bounds for dragging.
+ */
+
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event
 {
     for (UITouch *t in touches) {
@@ -281,13 +292,13 @@
         _touchRadius = distance(location);
         if (_touchRadius <= 170 && _touchRadius >= 160) {
             self.touchedSlice.radius = 160;
-        } else if ( ) // Add check for negative distance.
+        }  // Add check for negative distance.
         self.touchedSlice.radius = _touchRadius;
     }
     
     [self setNeedsDisplay];
 }
-*/
+
 
 - (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
 {
